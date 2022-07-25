@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/birthday.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.big-container .container {
+  padding: 30px;
+}
+
+h1,
+.big-text,
+span {
+  text-shadow: 1px 1px 2px #000;
+}
+
+h1 {
+  font-size: 4.9rem;
+  color: rgb(252, 252, 252);
+}
+
+.big-text {
+  font-size: 4.2rem;
+}
+
+.container span {
+  font-size: bold;
+  font-size: 1.7rem;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  .big-container .container {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+}
